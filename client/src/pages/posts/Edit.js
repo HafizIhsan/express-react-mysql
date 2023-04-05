@@ -25,14 +25,6 @@ function EditPost() {
     //get ID from parameter URL
     const { id } = useParams();
 
-    //hook useEffect
-    useEffect(() => {
-
-        //panggil function "getPOstById"
-        getPostById();
-        
-    }, []);
-
     //function "getPostById"
     const getPostById = async() => {
 
@@ -46,6 +38,15 @@ function EditPost() {
         setContent(data.content);
 
     };
+    
+    //hook useEffect
+    useEffect(() => {
+
+        //panggil function "getPOstById"
+        getPostById();
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     //function "updatePost"
     const updatePost = async (e) => {

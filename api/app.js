@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var testAPIRouter = require('./routes/testAPI');
 var helloRouter = require('./routes/hello');
 var postsRouter = require('./routes/posts');
+var klasifikasiSuratRouter = require('./routes/klasifikasi_surat');
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use('/users', usersRouter);
 app.use('/testAPI', testAPIRouter);
 app.use('/hello',helloRouter);
 app.use('/api/posts', postsRouter);
+app.use('/api/klasifikasi-surat', klasifikasiSuratRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

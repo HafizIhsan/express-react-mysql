@@ -16,6 +16,9 @@ import PostCreate from './pages/posts/Create.js'
 //import component Post Edit
 import PostEdit from './pages/posts/Edit.js'
 
+//import component Klasifikasi Surat Index
+import KlaSuratIndex from './pages/klasifikasi_surat/Index.js'
+
 function App() {
   return (
     <div>
@@ -27,6 +30,7 @@ function App() {
                 <Nav className="me-auto">
                   <Nav.Link as={Link} to="/" className="nav-link">HOME</Nav.Link>
                   <Nav.Link as={Link} to="/posts" className="nav-link">POSTS</Nav.Link>
+                  <Nav.Link as={Link} to="/klasifikasi-surat" className="nav-link">KLASIFIKASI SURAT</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Container>
@@ -37,6 +41,7 @@ function App() {
           <Route exact path="/posts" element={<PostIndex/>} />
           <Route exact path="/posts/create" element={<PostCreate/>} />
           <Route exact path="/posts/edit/:id" element={<PostEdit/>} />
+          <Route exact path="/klasifikasi-surat" element={<KlaSuratIndex/>} />
         </Routes>  
     </div>
   );
