@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 //import component Bootstrap React
-import { Card, Container, Row, Col, Table, Button} from 'react-bootstrap';
+import { Card, Container, Row, Col, Button} from 'react-bootstrap';
 
 //import axios
 import axios from 'axios';
